@@ -10,7 +10,7 @@ contributors:
 ## What are they?
 
 Data structures are exactly what they sound like -- objects in which data is
-stored in some manner. The file system on your compueter is a tree data
+stored in some manner. The file system on your computer is a tree data
 structure, where the nodes are directories and leaves are files. Data can be
 stored in many ways, such as in arrays, lists, stacks, queues, and trees. 
 Each of these methods has advantages and disadvatages. Some may be very fast at
@@ -18,10 +18,84 @@ getting a specific element, but be slow when it comes to inserting or deleting
 elements. Knowledge of which data structure to use for a given set of data can
 be critical in optimizing your program and making difficult tasks easier. 
 
-## Types of Data Structures
+## Basic Data Structures
+
+In this section, we will give a brief overview of the most fundamental data 
+structures, and give basic use cases for each of them. Many other data 
+structures are extensions of these basic types, so an understanding of them
+will take you far. We will present pseudocode for the implementation of each
+of these simple data structures to help illuminate how each of them works.
+
+### Array
+### Binary Search Tree
+### Hash Table
+### Heap
+### Queue
+### Singly-Linked List
+### Stack
+
+## More Complex Data Structures
+
+Here we will review some of the more complicated data structures, and once 
+again give examples where each may be used. We will not present pseudocode for
+these data structures, but will discuss how they may arise from simpler ones.
+
+### AVL Tree
+### B-Tree
+### Cartesian Tree
+### Doubly-Linked List
+### Heap
+### KD Tree
+### Red-Black Tree
+### Skip List
+### Splay Tree
 
 
+## Complexity of Basic Operations
 
+In this section, we will compare the Algorithmic Complexity of the common data
+operations (Access, Search, Insert, Delete) for each data structure. A more 
+in-depth version of this information (and a cool poster) may be found at
+[the Big-O cheatsheet website](http://bigocheatsheet.com/). 
+
+In the below graph, average- and worst- case times are both presented for 
+comparison in the form Θ(Avg) | O(worst). For instance, the Binary Search
+Tree for each operation looks like Θ(log(n)) | O(n). This means that on 
+average, BST operations scale like the log(n), but can scale as slowly as (n)
+in some cases. For a more detailed analysis of time complexity, see the page
+for Complexity Analysis on this site. 
+
+| Data Structure     |   Access Complexity    | Find Complexity        | Insert Complexity      | Delete Complexity      |
+|--------------------|:----------------------:|------------------------|------------------------|------------------------|
+| Array              |      Θ(1) \| O(1)      |      Θ(n) \| O(n)      |      Θ(n) \| O(n)      |      Θ(n) \| O(n)      |
+| AVL Tree           | Θ(log(n)) \| O(log(n)) | Θ(log(n)) \| O(log(n)) | Θ(log(n)) \| O(log(n)) | Θ(log(n)) \| O(log(n)) |
+| Binary Search Tree |    Θ(log(n)) \| O(n)   |    Θ(log(n)) \| O(n)   |    Θ(log(n)) \| O(n)   |    Θ(log(n)) \| O(n)   |
+| B-Tree             | Θ(log(n)) \| O(log(n)) | Θ(log(n)) \| O(log(n)) | Θ(log(n)) \| O(log(n)) | Θ(log(n)) \| O(log(n)) |
+| Cartesian Tree     |       N/A \| N/A       |    Θ(log(n)) \| O(n)   |    Θ(log(n)) \| O(n)   |    Θ(log(n)) \| O(n)   |
+| Doubly-Linked List |      Θ(n) \| O(n)      |      Θ(n) \| O(n)      |      Θ(1) \| O(1)      |      Θ(1) \| O(1)      |
+| Hash Table         |       N/A \| N/A       |      Θ(1) \| O(n)      |      Θ(1) \| O(n)      |      Θ(1) \| O(n)      |
+| KD Tree            |    Θ(log(n)) \| O(n)   |    Θ(log(n)) \| O(n)   |    Θ(log(n)) \| O(n)   |    Θ(log(n)) \| O(n)   |
+| Queue              |      Θ(n) \| O(n)      |      Θ(n) \| O(n)      |      Θ(1) \| O(1)      |      Θ(1) \| O(1)      |
+| Red-Black Tree     | Θ(log(n)) \| O(log(n)) | Θ(log(n)) \| O(log(n)) | Θ(log(n)) \| O(log(n)) | Θ(log(n)) \| O(log(n)) |
+| Singly-Linked List |      Θ(n) \| O(n)      |      Θ(n) \| O(n)      |      Θ(1) \| O(1)      |      Θ(1) \| O(1)      |
+| Skip List          |    Θ(log(n)) \| O(n)   |    Θ(log(n)) \| O(n)   |    Θ(log(n)) \| O(n)   |    Θ(log(n)) \| O(n)   |
+| Splay Tree         |       N/A \| N/A       | Θ(log(n)) \| O(log(n)) | Θ(log(n)) \| O(log(n)) | Θ(log(n)) \| O(log(n)) |
+| Stack              |      Θ(n) \| O(n)      |      Θ(n) \| O(n)      |      Θ(1) \| O(1)      |      Θ(1) \| O(1)      |
+
+
+## Closing Remarks
+
+This overview does not cover all data structures -- indeed, there are many out
+there, and more are still being invented. However, this article has hopefully
+given you the understanding you need to pick the right data structure for your
+problem. The field of data structures is large, and we heartily encourage you
+to look through the extra resources, as there is much more depth to find. 
+
+Happy diving!
+
+## Resources
+
+<!---
 ## Types of Asymptotic Notation
 
 In the first section of this doc we described how an Asymptotic Notation 
@@ -197,3 +271,5 @@ on its way; we'll have a doc up on analyzing actual code examples soon.
 * [MIT](http://web.mit.edu/16.070/www/lecture/big_o.pdf)
 * [KhanAcademy](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation)
 * [Big-O Cheatsheet](http://bigocheatsheet.com/) - common structures, operations, and algorithms, ranked by complexity.
+
+--->
